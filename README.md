@@ -1,4 +1,11 @@
-# OpenFrame Overview
+# Project Description and Proposal
+
+This work introduces an open-source system-on-chip design for optically detected magnetic resonance (ODMR) control, aimed at advancing accessible quantum sensing platforms. Quantum sensors are a near-term application of quantum technologies that promise advantages in sensitivity, size, weight, power, and cost compared to classical sensors. These advantages create new opportunities for biomedical, aerospace, automotive, and energy applications where compact and precise measurement tools are desired.
+In August 2025, the nonprofit Quantum Village (QV) released an open design for a low-cost quantum sensor based on nitrogen vacancy (NV) centers. NV centers are room-temperature qubits whose states can be controlled and read out using ODMR methods. This approach enables precise measurements of magnetic field, temperature, and pressure with robustness and sensitivity suitable for real-world conditions.
+Although ODMR systems have been studied extensively in laboratories, they typically depend on bulky and expensive analytical equipment, limiting their practicality outside controlled research environments. Alternative implementations using microcontrollers or FPGA-based controllers have been tested, but they often lack transparency, reproducibility, and design continuity.
+To address these gaps, we propose an "ODMR-SoC" that is purpose-built for driving, controlling, and processing ODMR-based quantum sensor signals. By integrating this design with the QV reference sensor, we establish a fully open and high-performance chip platform. This platform lowers barriers for quantum electronics education, improves the reproducibility of quantum sensing research, and supports the development of low-cost, portable quantum sensing applications.
+
+## OpenFrame Overview
 
 The OpenFrame Project provides an empty harness chip that differs significantly from the Caravel and Caravan designs. Unlike Caravel and Caravan, which include integrated SoCs and additional features, OpenFrame offers only the essential padframe, providing users with a clean slate for their custom designs.
 
